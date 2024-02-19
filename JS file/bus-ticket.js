@@ -56,7 +56,6 @@ for (const seat of seatItems) {
         
         if (count < 4) {
             if (checkArr.includes(seat)) {
-                alert("You are eligible for only 4 seat .")
                 return;
 
             }
@@ -71,6 +70,7 @@ for (const seat of seatItems) {
                 setElement('grand-total', totalTicket);
                 
                 seat.style.backgroundColor='#1DD100'
+                e.target.classList.add('pointer-events-none')
 
 
                 setElement('add-seat', count)
@@ -80,7 +80,7 @@ for (const seat of seatItems) {
             }
         }
         else {
-            alert("You can't select more than 4 ticket")
+            alert("You are not eligible for more than 4 seats")
         }
         
         checkArr.push(seat);
