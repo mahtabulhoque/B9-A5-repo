@@ -47,13 +47,13 @@
   </head>
 
   <body class="max-w-[1440px] mx-auto">
-    <header>
-      <nav class="flex justify-between py-6">
+    <header class="">
+      <nav class="flex justify-between lg:py-6 gap-11">
         <h1 class="text-[#030712] text-[32px] font-extrabold font-raleway">
           P-Ticket
         </h1>
         <div class="text-[18px] text-[#030712B3] font-raleway font-medium">
-          <ul class="flex gap-8">
+          <ul class="lg:flex hidden lg:gap-8 gap-16">
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href=""></a>Destination</li>
@@ -117,9 +117,9 @@
       <div class="flex gap-5 my-20">
         <!-- card-1 -->
         <div
-          class="flex justify-between items-center bg-[#FFBF0F] w-full rounded-3xl"
+          class="flex m-6 lg:m-0 justify-between items-center bg-[#FFBF0F] w-full rounded-3xl"
         >
-          <div class="m-5">
+          <div class="lg:m-5">
             <h1 class="text-[#030712CC] text-[40px] font-inter font-extrabold">
               15% OFF
             </h1>
@@ -149,7 +149,7 @@
         <!-- card-2 -->
 
         <div
-          class="flex justify-between items-center bg-[#F78C9C] w-full rounded-3xl"
+          class="flex m-6 lg:m-0 justify-between items-center bg-[#F78C9C] w-full rounded-3xl"
         >
           <div class="m-5">
             <h1 class="text-[#030712CC] text-[40px] font-inter font-extrabold">
@@ -206,7 +206,7 @@
 
       <!-- ph form -->
 
-      <div class="flex items-center gap-24 bg-[#FFF] w-full rounded-3xl">
+      <div class="lg:flex items-center gap-24 bg-[#FFF] w-full rounded-3xl">
         <div>
           <div class="flex justify-between py-7">
             <!-- p-1 -->
@@ -613,44 +613,38 @@
 
     <div>
       <footer class="footer flex p-10 bg-neutral text-neutral-content">
+        <div class="flex justify-between">
+          <div>
+            <h1>P-Ticket</h1>
+            <p>
+              P-Ticket is a digital platform to make your daily commuting
+              better.
+            </p>
+          </div>
 
-       <div class="flex justify-between">
-        <div>
-          <h1>P-Ticket</h1>
-        <p>
-          P-Ticket is a digital platform to make your daily commuting better.
-        </p>
+          <div>
+            <h2>Download our app</h2>
+            <div><img src="./images/playstore.png" alt="" /></div>
+          </div>
         </div>
-
-        <div>
-          <h2>Download our app</h2>
-          <div><img src="./images/playstore.png" alt=""></div>
-        </div>
-       </div>
-       
 
         <hr class="border-dashed py-3" />
 
-       <div class="flex">
-        <div>
-          <p>@all rights reserved, P-Ticket services limited.2024</p>
+        <div class="flex">
+          <div>
+            <p>@all rights reserved, P-Ticket services limited.2024</p>
+          </div>
 
+          <div>
+            <p>Terms & condition</p>
+            <p>Return & refund policy</p>
+            <p>Privacy policy</p>
+          </div>
         </div>
-        
-        <div>
-          <p>Terms & condition</p>
-          <p>Return & refund policy</p>
-          <p>Privacy policy</p>
-        </div>
-       </div>
       </footer>
-
-       </div>
-
-
+    </div>
 
     <!-- javscript link -->
     <script src="./JS file/bus-ticket.js"></script>
-    
   </body>
 </html>

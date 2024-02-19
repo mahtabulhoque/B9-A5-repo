@@ -62,6 +62,7 @@ for (const seat of seatItems) {
             }
            else {
                 count += 1;
+                
                 totalTicket += parseInt(elementId('seat-price').innerText);
                 let seatAvailable = parseInt(elementId('bus-seat').innerText);
                 setElement('bus-seat', seatAvailable - 1)
@@ -117,9 +118,13 @@ function couponApply() {
     }
 }
 
-elementId('phoneNumber').addEventListener('keyup', function () {
-    elementId('buttonmodal').removeAttribute("disabled");
-
+const phone = elementId('phoneNumber')
+phone.addEventListener('input', function (e) {
+    const inputValue=e.target.value
+   if(count>0 && inputValue.length>0){
+    document.getElementById("buttonmodal").removeAttribute("disabled");
+   }
+    
 })
 
 
